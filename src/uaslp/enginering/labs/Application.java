@@ -25,7 +25,23 @@ public class Application {
         Menu navigateMenu = buildMenuNavigate();
         applicationMenu.addOption(navigateMenu);
 
+
+
+        // [ ] Un texto
+        applicationMenu.addOption(new Checkbox("Un texto"));
+        applicationMenu.addOption(new Checkbox("Otro texto"));
+
+        // Opción 1 - Opcion 2 - Opcion 3
+        applicationMenu.addOption(new ListBox("Opcion 1", "Opcion 2", "Opción 3"));
+        applicationMenu.addOption(new Checkbox("Opcion 5"));
+
+        // [|        ]
+        applicationMenu.addOption(new EditBox());
+
+
         applicationMenu.addOption(new Button("Exit"));
+        applicationMenu.addOption(new ListBox("Opcion 4", "Opcion 5"));
+        applicationMenu.addOption(new EditBox());
 
         return applicationMenu;
     }
