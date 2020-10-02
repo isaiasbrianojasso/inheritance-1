@@ -95,4 +95,3 @@ public class Application {
         return menuFile;
     }
 }
-
